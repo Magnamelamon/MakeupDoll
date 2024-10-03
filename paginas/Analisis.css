@@ -1,0 +1,132 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #7FFFD4;
+}
+
+#list
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+#list ul
+{
+    display: flex;
+    gap: 30px;
+}
+
+#list li
+{
+    list-style: none;
+    border: solid black 2px;
+    border-radius: 1.5rem;
+    width: auto;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    padding: 10px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#list li:hover
+{
+    background-color: aqua;
+}
+/*/////////////////////*/
+
+/*Seccion ventas totales*/
+#ventasTotales
+{
+    width: 100%;
+}
+
+.tablecontainer 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.info
+{
+    text-align: left;
+    width: 75%;
+    margin: 20px 0px;
+}
+
+#ingresos
+{
+    font-size: 60px;
+    margin: 0%;
+}
+
+#totales p
+{
+    font-size: 40px;
+    margin: 0%;
+}
+
+.tabla
+{
+    background-color: white;
+    width: 75%;
+    border-spacing: 20px;
+    border-radius: 2rem;
+}
+.tabla tr,th 
+
+{   
+    border-collapse: collapse;
+    border-bottom: 2px solid black;
+}
+
+/*Seccion ventas por semana*/
+
+#ventasXsemana
+{
+    width: 100%;
+}
+
+/*Seccion ventas por mes*/
+
+#ventasXsemana .active
+{
+    display: none;
+}
+
+#ventasxmes
+{
+    width: 100%;
+    
+}
+/*Seccion de producots mas vendidos*/
+
+
+#productosMasVendidos
+{
+    width: 100%;
+}
+
+.info select
+{
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    border-radius: 2rem;
+}
+
+
+.active
+{display: none;}

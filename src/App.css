@@ -1,42 +1,99 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
+.cardContainer{
+  display: flex;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: black solid 2px;
+  height: 400px;
+  width: 250px;
+  border-radius: 2rem;
+  transition: all 0.2s ease; /* Para la card en general */
+  gap: 15px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.cardContainer.active{
+  width: 500px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.ImgContainer
+{
+  width: 250px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ImgContainer button
+{
+  border: black solid 2px;
+  border-radius: 2rem;
+  height: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.DesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  max-width: 0; /* Inicialmente colapsado */
+  opacity: 0; /* Totalmente invisible */
+  overflow: hidden; /* Esconder contenido cuando esté colapsado */
+  transition: max-height 1s ease, opacity 0.5s ease; /* Animación de transición */
+  
 }
 
-.card {
-  padding: 2em;
+.DesContainer.active {
+  max-width: 400px; /* Define la altura máxima cuando esté visible */
+  opacity: 1; /* Lo hacemos visible */
+  transition: max-height 1s ease, opacity 0.5s ease; 
 }
 
-.read-the-docs {
-  color: #888;
+.DesContainer button
+{
+  margin: 5px;
+  border-radius: 2rem;
+  height: 30px;
+}
+
+.colors{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  
+}
+
+.colors button{
+  border-radius:50%;
+  height: 20px;
+  width: 20px;
+  
+}
+
+.red{
+  background-color: red;
+}
+.blue{
+  background-color: blue;
+}
+.nude{
+  background-color: burlywood;
+}
+.pink{
+  background-color: pink;
+}
+.cantidad
+{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cantidad button
+{
+  display: flex;
+  gap: 10px;
+  height: 30px;
+  width: 30px;
+  border: solid black 2px;
+  border-radius: 2.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }

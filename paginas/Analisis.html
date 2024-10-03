@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/paginas/Analisis.css">
+  </head>
+  <body>
+    <h1>Makupdoll Shop</h1>
+    <section id="list">
+      <ul>
+        <li id="btnVT">Ventas Totales</li>
+        <li id="btnVS">Ventas por semana </li>
+        <li id="btnVM">Ventanas por mes </li>
+        <li id="btnMV">Productos mas vendidos</li>
+      </ul>
+    </section>
+    <section id="ventasTotales">
+        <div class="tablecontainer">
+            <div class="info">
+            <p>Ventas totales :</p>
+            <h2 id="ingresos">Cantidad de dinero</h2>
+            <p>Productos vendidos</p>
+             </div>
+            <table class="tabla">
+                <tr>
+                    <th>Semana</th>
+                    <th>Unidades vendidas</th>
+                    <th>Ingresos</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="ventasXsemana">
+      <div class="tablecontainer">
+        <div class="info">
+          <p>Ventas por semana </p>
+          <h2>informacion grafica</h2>
+        </div>
+        <table class="tabla">
+          <tr>
+              <th>Semana</th>
+              <th>Ingresos</th>
+          </tr>
+      </table>
+      </div>
+    </section>
+    <section id="ventasxmes">
+      <div class="tablecontainer">
+        <div class="info">
+          <p>Ventas por mes </p>
+          <h2>informacion grafica</h2>
+        </div>
+        <table class="tabla" >
+          <tr>
+              <th>mes</th>
+              <th>Ingresos</th>
+          </tr>
+      </table>
+      </div>
+    </section>
+    <section id="productosMasVendidos">
+      <div class="tablecontainer">
+        <div class="info">
+          <p>Ventas por semana </p>
+          <select name="Mes" id="Meses">
+            <option value="Mes">Mes</option>
+            <option value="Enero">Enero</option>
+            <option value="Febrero">Febrero</option>
+            <option value="Marzo">Marzo</option>
+            <option value="Abril">Abril</option>
+            <option value="Mayo">Mayo</option>
+            <option value="Junio">Junio</option>
+            <option value="Julio">Julio</option>
+            <option value="Agosto">Agosto</option>
+            <option value="Septiempbre">Septiempbre</option>
+            <option value="Octubre ">Octubre</option>
+            <option value="Noviembre">Noviembre</option>
+            <option value="Diciembre">Diciembre</option>
+          </select>
+        </div>
+        <table class="tabla">
+          <tr>
+              <th>Prdoucto</th>
+              <th>Ventas</th>
+          </tr>
+      </table>
+      </div>
+    </section>
+    <script src="./Analisis.js"></script>
+    <script src="./Toggle.js"></script>
+  </body>
+</html>
