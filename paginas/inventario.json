@@ -1,0 +1,48 @@
+[
+    {
+        "tipo":"labial",
+        "Nombre":"labial",
+        "Precio":500,
+        "stock":10,
+        "vendidos":5,
+        "descripcion":"labial super qute que se ve bonito",
+        "imagenes":"urlg"
+    },
+
+    {
+        "tipo":"labial",
+        "Nombre":"labial",
+        "Precio":500,
+        "stock":10,
+        "vendidos":5,
+        "descripcion":"labial super qute que se ve bonito"
+    },
+
+    {
+        "tipo":"labial",
+        "Nombre":"labial",
+        "Precio":500,
+        "stock":10,
+        "vendidos":5,
+        "descripcion":"labial super qute que se ve bonito"
+    },
+
+    {
+        "tipo":"labial",
+        "Nombre":"labial",
+        "Precio":500,
+        "stock":10,
+        "vendidos":5,
+        "descripcion":"labial super qute que se ve bonito"
+    },
+    
+    {
+        "tipo":"labial",
+        "Nombre":"labial",
+        "Precio":500,
+        "stock":10,
+        "vendidos":5,
+        "descripcion":"labial super qute que se ve bonito"
+    }
+]
+
