@@ -1,0 +1,617 @@
+.main--body {
+    background-color: rgb(94, 196, 182);
+    position: absolute;
+    width: 100%;
+    margin: 0 0;
+}
+
+/* Barra Superior */
+.top-barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px;
+    color: white;
+    font-family: "Arima", system-ui;
+    font-weight: 600;
+}
+
+.top-barra-left span {
+    font-size: 25px;
+    margin: 5px;
+    font-family: "Arima", system-ui;
+    font-weight: 600;
+}
+
+.top-barra-right span {
+    margin: 0 5px;
+    font-size: 22px;
+    font-family: "Arima", system-ui;
+    font-weight: 600;
+}
+
+.top-barra img {
+    height: 25px;
+    vertical-align: sub;
+}
+
+/* Navbar */
+.navbarra {
+    background-color: #66c2b0;
+    padding: 15px;
+    text-align: right;
+    font-family: "Arima", system-ui;
+    font-weight: 600;
+}
+
+.navbarra ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    font-family: "Arima", system-ui;
+}
+
+.navbarra ul li {
+    display: inline;
+    margin: 0 10px;
+    text-align: right;
+    font-family: "Arima", system-ui;
+}
+
+.navbarra ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: "Arima", system-ui;
+}
+
+.navbarra svg {
+    justify-content: space-between;
+}
+
+.category--header {
+    width: 100%;
+    font-family: 'Arima';
+}
+
+#category--title {
+    margin: 0 0;
+    font-size: 36px;
+    text-align: center;
+    color: rgb(169, 53, 130);
+}
+
+/* Categorías */
+.category--section {
+    background-color: rgb(94, 196, 182);
+    text-align: center;
+    font-family: "Arima", system-ui;
+    font-weight: 1000;
+}
+
+.grid-item {
+    padding: 0 10px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 30px 0;
+}
+
+.category-item {
+    display: grid;
+    cursor: pointer;
+}
+
+.category-item img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#img-title {
+    display: flow;
+    margin-top: 5px;
+    font-size: 16px;
+    color: rgb(169, 53, 130);
+    font-family: "Arima", system-ui;
+}
+
+#filter-title {
+    margin: 0 30px;
+    font-size: 36px;
+    color: rgb(169, 53, 130);
+    font-family: "Arima", system-ui;
+}
+
+#image-item {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    background: rgba(169, 53, 130, 0.58);
+    border: 1px solid rgb(169, 53, 130);
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image-item:hover {
+    border: 1px solid white;
+    transform: scale(1.05);
+}
+
+#image-item:active {
+    transform: scale(0.95);
+}
+
+
+/**** Tarjetas *****/
+.cards--products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.cards--products-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.card {
+    width: 200px;
+    height: 310px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+    background: rgba(242, 208, 189, 0.80);
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    transition: all .4s;
+    margin: 0 20px;
+    grid-row: auto;
+    display: inline-block;
+}
+
+.card::before {
+    content: '--------- ULTRAMO ---------  \A\A- Acabado mate \A- Buena cobertura \A- Larga duración \A - Textura ligera y sedosa \a\a La base de maquillaje líquida de textura ligera puede proporcionar a la piel un acabado aterciopelado y un efecto que dure horas.\a\a';
+    white-space: pre-wrap;
+    /*permite el espaciado en content con \A en CSS sin escribir parrafo en HTML*/
+    letter-spacing: 0.1em;
+    position: absolute;
+    bottom: 8px;
+    left: 5px;
+    color: rgb(51, 51, 51);
+    font-size: 0.8em;
+    font-weight: 700;
+    z-index: -1;
+
+}
+
+.card div {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 0 3px rgba(0, 0, 0, 0.212);
+    cursor: pointer;
+    z-index: 10;
+    transition: all .4s;
+    background-color: rgb(242, 208, 189);
+    display: inline-block;
+
+}
+
+.card div h3 {
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.card:hover div {
+    transform: translateX(-200px);
+    border-radius: 20px 0 0 20px;
+}
+
+.card:hover {
+    transform: translateX(200px);
+    border-radius: 0 20px 20px 0;
+}
+
+.img--products {
+    width: 60%;
+}
+
+#cardImg--products {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#span--card {
+    color: #18181b;
+    margin: 5px;
+}
+
+#color--selection {
+    font-size: 0.75rem;
+    color: #d9d9d9;
+}
+
+.list--color {
+    display: flex;
+    background-color: white;
+    height: 27px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+    gap: 0.25rem;
+    margin: 2px 0;
+    border-radius: 0.50rem;
+}
+
+.list--color .item-list {
+    list-style: none;
+}
+
+.list--color .item-list-button {
+    cursor: pointer;
+
+    padding: 0.5rem;
+
+    border: 2px solid #81818b;
+    border-radius: 5rem;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.item-list-button:hover {
+    border: 2px solid black;
+}
+
+.item-list-button:focus {
+    background-color: #6d28d9;
+
+    border: 2px solid #2e1065;
+
+    box-shadow: inset 0px 1px 4px #2e1065;
+}
+
+.arrow-left,
+.arrow-right {
+    width: 10%;
+    color: #000;
+    z-index: 10;
+}
+
+.arrow-left:active, .arrow-right:active {
+    transform: translateX(1%) translateY(1%) scale(0.9);
+}
+
+.arrow-left-image:active, .arrow-right-image:active {
+    transform: translateX(1%) translateY(1%) scale(0.9);
+}
+
+.footer--products {
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Arima';
+    background-color: black;
+    padding: 50px 0;
+    margin: 300px 0px 0px 0px;
+}
+
+.footer--products h1 {
+    margin: 0 0;
+}
+
+.buy--buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 3px 0px 3px;
+}
+
+.buy--buttons button {
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: rgb(169, 53, 130);
+    color: white;
+    border: none;
+    height: 25px;
+    transition: all 0.3s ease;
+    font-size: revert;
+}
+
+.buy--buttons button:hover {
+    background-color: white;
+    color: rgb(169, 53, 130);
+}
+
+/* Footer */
+.footer--container {
+    background-color: black;
+    color: white;
+    padding: 0 0 10px 0;
+    margin-top: 300px;
+    font-family: "Arima", system-ui;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Arima", system-ui;
+}
+
+.footer-info h3 {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    padding: 30px;
+    text-align: center;
+    font-family: "Arima", system-ui;
+    font-weight: 800;
+    color: white;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    font-family: "Arima", system-ui;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    font-family: "Arima", system-ui;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Arima", system-ui;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 10px;
+    font-family: "Arima", system-ui;
+    font-weight: 500;
+}
+
+.footer-images {
+    width: 40px;
+    vertical-align: middle;
+}
+
+.filter--section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#filter-span {
+    padding-top: 5px;
+}
+
+.filter-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    margin: 0 30px;
+    padding-top: 15px;
+}
+
+/* Filter section */
+.select {
+    width: fit-content;
+    cursor: pointer;
+    position: relative;
+    transition: 300ms;
+    color: white;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.selected {
+    background-color: #2a2f3b;
+    padding: 5px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 100000;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow {
+    position: relative;
+    right: 0px;
+    height: 10px;
+    transform: rotate(-90deg);
+    width: 25px;
+    fill: white;
+    z-index: 100000;
+    transition: 300ms;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #2a2f3b;
+    position: relative;
+    top: -100px;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.select:hover>.options {
+    opacity: 1;
+    top: 0;
+}
+
+.select:hover>.selected .arrow {
+    transform: rotate(0deg);
+}
+
+.option {
+    border-radius: 5px;
+    padding: 5px;
+    transition: 300ms;
+    background-color: #2a2f3b;
+    width: 150px;
+    font-size: 15px;
+}
+
+.option:hover {
+    background-color: #323741;
+}
+
+.options input[type="radio"] {
+    display: none;
+}
+
+.options label {
+    display: inline-block;
+}
+
+.options label::before {
+    content: attr(data-txt);
+}
+
+.options input[type="radio"]:checked+label {
+    display: none;
+}
+
+.options input[type="radio"]#all:checked+label {
+    display: none;
+}
+
+.select:has(.options input[type="radio"]#all:checked) .selected::before {
+    content: attr(data-default);
+}
+
+.select:has(.options input[type="radio"]#option-1:checked) .selected::before {
+    content: attr(data-one);
+}
+
+.select:has(.options input[type="radio"]#option-2:checked) .selected::before {
+    content: attr(data-two);
+}
+
+.select:has(.options input[type="radio"]#option-3:checked) .selected::before {
+    content: attr(data-three);
+}
+
+.select-b {
+    width: fit-content;
+    cursor: pointer;
+    position: relative;
+    transition: 300ms;
+    color: white;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.selected-b {
+    background-color: #2a2f3b;
+    padding: 5px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 100000;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow-b {
+    position: relative;
+    right: 0px;
+    height: 10px;
+    transform: rotate(-90deg);
+    width: 25px;
+    fill: white;
+    z-index: 100000;
+    transition: 300ms;
+}
+
+.options-b {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #2a2f3b;
+    position: relative;
+    top: -100px;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.select-b:hover>.options-b {
+    opacity: 1;
+    top: 0;
+}
+
+.select-b:hover>.selected-b .arrow-b {
+    transform: rotate(0deg);
+}
+
+.option-b {
+    border-radius: 5px;
+    padding: 5px;
+    transition: 300ms;
+    background-color: #2a2f3b;
+    width: 150px;
+    font-size: 15px;
+}
+
+.option-b:hover {
+    background-color: #323741;
+}
+
+.options-b input[type="radio"] {
+    display: none;
+}
+
+.options-b label {
+    display: inline-block;
+}
+
+.options-b label::before {
+    content: attr(data-txt);
+}
+
+.options-b input[type="radio"]:checked+label {
+    display: none;
+}
+
+.options-b input[type="radio"]#all-b:checked+label {
+    display: none;
+}
+
+.select-b:has(.options-b input[type="radio"]#all-b:checked) .selected-b::before {
+    content: attr(data-default);
+}
+
+.select-b:has(.options-b input[type="radio"]#option-1-b:checked) .selected-b::before {
+    content: attr(data-one);
+}
+
+.select-b:has(.options-b input[type="radio"]#option-2-b:checked) .selected-b::before {
+    content: attr(data-two);
+}
