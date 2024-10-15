@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda de Maquillaje</title>
+    <link rel="stylesheet" href="./muadoll.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
+    </style>
+    
+    <!-- Conexión bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+  </head>
+
+  <body>
+    <!-- Barra Superior -->
+    <div class="top-barra">
+      <div class="top-barra-left">
+        <span>HASTA <b>6MSI</b></span>
+        <img src="https://www.pngall.com/wp-content/uploads/13/PayPal-Logo.png" alt="Paypal" />
+        <span>y tarjetas participantes</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1200px-Visa_Inc._logo.svg.png" alt="Visa" />
+        <img src="https://1000marcas.net/wp-content/uploads/2019/12/logo-Mastercard.png" alt="Mastercard" />
+      </div>
+
+      <div class="top-barra-right">
+          <span> | ENVÍO GRATIS en compras desde $1,500</span>
+      </div>
+    </div>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbarra">
+       <div class="icon">
+        <ul>
+        <li><a href="#">INICIO</a></li>
+        <li><a href="#">PRODUCTOS</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">NOSOTROS</a></li>
+        <li></li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
+          <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018"/>
+          <path d="M13 6.5a6.47 6.47 0 0 1-1.258 3.844q.06.044.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-heart" viewBox="0 0 16 16">
+          <path d="M9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4m13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276Z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+        </svg>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Banner Promocional -->
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://www.coisasdediva.com.br/wp-content/uploads/2017/01/maxxi-paleta-4.jpg" class="d-block w-100" alt="sombras" width="600" height="800">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sombras mate</h5>
+            <p>Dale a tu cara un toque mate para complementar tu maquillaje.</p>
+            <button>Compra ahora</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://miin-cosmetics.com/blog/wp-content/uploads/Portada-Moart-01-1024x680.jpg" class="d-block w-100" alt="corean"width="600" height="800">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Maquillaje coreano</h5>
+            <p>Adquiere en maquillaje coreano que siempre has querido.</p>
+            <button>Compra ahora</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.wendy.com.ar/wp-content/uploads/2023/05/26233491-cb02-48ba-a44d-3ea4421eb05a.jpg" class="d-block w-100" alt="brochas" width="600" height="800">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Brochas kabuki</h5>
+            <p>Lleva contigo siempre la mejor calidad de brochas.</p>
+            <button>Compra ahora</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+    
+       
+
+    <h1 id="category--title" style="font-family: 'Arima';">CATEGORÍAS</h1>
+   
+    <!-- Categorías -->
+    <section class="category--section">
+      <div class="category-list">
+
+        <div class="grid-item">
+            <div id="image-item">
+                <a href="" class="category-item">
+                    <img src="https://nuevaestetica.com/sites/default/files/noticias/intrerior_maquillaje_buena_cara.jpg"
+                        alt="Rostro" />
+                </a>
+            </div>
+            <span id="img-title">Rostro</span>
+        </div>
+        <div class="grid-item">
+            <div id="image-item">
+                <a href="" class="category-item">
+                    <img src="https://img.freepik.com/foto-gratis/modelo-pintandose-labios_23-2147643784.jpg"
+                        alt="Labios" />
+                </a>
+            </div>
+            <span id="img-title">Labios</span>
+        </div>
+        <div class="grid-item">
+            <div id="image-item">
+                <a href="" class="category-item">
+                    <img src="https://freetherabbit.com/cdn/shop/products/CO_ESOMAT_5.jpg?v=1634233643&width=713"
+                        alt="Ojos" />
+                </a>
+            </div>
+            <span id="img-title">Ojos</span>
+        </div>
+        <div class="grid-item">
+            <div id="image-item">
+                <a href="" class="category-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO34PIaGLf2yg0B2JOdYUCDYloWnYwHfxSvA&s"
+                        alt="Uñas" />
+                </a>
+            </div>
+            <span id="img-title">Uñas</span>
+        </div>
+        <div class="grid-item">
+            <div id="image-item">
+                <a href="" class="category-item">
+                    <img src="https://www.momijibeauty.com/cdn/shop/articles/photo5web_086f6062-b0a0-41f2-bee4-cf2d84dbc53a_1080x.jpg?v=1571388486"
+                        alt="Cuidado_piel" />
+                </a>
+            </div>
+            <span id="img-title">Cuidado Piel</span>
+        </div>
+        <div class="grid-item">
+            <div id="image-item">
+                <a href="" class="category-item">
+                    <img src="https://i5.walmartimages.com/asr/9b17b790-0bcb-4566-ad16-836c332e30fe.8c307b00b8a977bf41c7c201966b4467.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
+                        alt="Accesorios" />
+                </a>
+            </div>
+            <span id="img-title">Accesorios</span>
+        </div>
+    </div>
+    </section>
+
+    <!-- Productos -->
+  <section class="cont">
+      <div class="product-grid">
+        <div class="product-item">Producto 1</div>
+        <div class="product-item">Producto 2</div>
+        <div class="product-item">Producto 3</div>
+        <div class="product-item">Producto 4</div>
+        <div class="product-item">Producto 5</div>
+        <div class="product-item">Producto 6</div>
+      </div>
+    </section>
+
+    <!-- Nueva Colección -->
+    <section class="new-collection">
+      <h1>NUEVA COLECCIÓN</h1>
+      <div class="collection-grid">
+        <img src="./styles/Portada.png" alt="colecction" />
+      </div>
+    </section>
+
+    <!--- Testimonios carrusel--->
+  <div><div class="wrapper">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-12">
+                  <div class="section-header text-center">
+                      <h2>Clientas felices</h2>
+                  </div>
+              </div>
+              <div class="col-sm-12">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+<div class="carousel-indicators">
+  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+<div class="carousel-inner">
+  <div class="carousel-item active" data-bs-interval="3000">
+    <div class="icon-area animated zoomIn" style="animation-delay: 1s">
+        <i class="fa fa-quote-right"></i>
+    </div>
+    <div class="img-area animated zoomIn" style="animation-delay: 2s">
+      <img src="./styles/logo.JPG" alt="">
+  </div>
+    <div class="content text-center">
+      <p>Me encantan excelente atención ya hice mis compritas y pueden verlo en mis historias.</p>
+        
+        <h5>Lilith BlackCat</h5>
+        <h6>4 octubre 2024</h6>
+    </div>
+  </div>
+  <div class="carousel-item" data-bs-interval="3000">
+    <div class="icon-area animated zoomIn" style="animation-delay: 1s">
+        <i class="fa fa-quote-right"></i>
+    </div>
+    <div class="img-area animated zoomIn" style="animation-delay: 2s">
+      <img src="./styles/logo.JPG" alt="">
+  </div>
+    <div class="content text-center">
+      <p>Entregas muys rápidas y te atienden de forma muy amable 10/10.</p>
+        
+        <h5>Farid Valdez</h5>
+        <h6>13 febrero 2023</h6>
+    </div>
+  </div>
+  <div class="carousel-item" data-bs-interval="3000">
+    <div class="icon-area animated zoomIn" style="animation-delay: 1s">
+        <i class="fa fa-quote-right"></i>
+    </div>
+    <div class="img-area animated zoomIn" style="animation-delay: 2s">
+      <img src="./styles/logo.JPG" alt="">
+  </div>
+    <div class="content text-center">
+      <p>La atención es super bonita, los productos novedosos y de buena calidad, sin mencionar que el precio es muy accesible.</p>
+        
+        <h5>Gryz Otori</h5>
+        <h6>19 agosto 2019</h6>
+    </div>
+
+</div></div> 
+              </div>
+          </div>
+      </div></div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <!--Categorias-->
+    <section class="nosotros">
+        <div class="categories-list">
+        <div class="item">
+        <img src="https://cdn.icon-icons.com/icons2/2036/PNG/512/new_message_envelope_icon_124221.png" />
+          <p>Contactanos</p>
+          <div class="info">Si tienes alguna duda o necesitas asistencia, estamos aquí para ayudarte. Envíanos un mensaje y te responderemos lo antes posible.</div>
+          </div>
+          <div class="item">
+            <img src="https://cdn-icons-png.flaticon.com/512/766/766736.png" />
+              <p>Entrega rápida</p>
+              <div class="info">Nos aseguramos de que tus productos lleguen lo antes posible. Envío garantizado en menos de 24 horas en áreas metropolitanas.</div>
+              </div>
+              <div class="item">
+                <img src="https://cdn-icons-png.flaticon.com/512/4853/4853062.png" />
+                  <p>Libre de crueldad animal</p>
+                  <div class="info">La belleza no tiene que comprometer el bienestar. Todos nuestros productos están libres de crueldad animal y son elaborados con conciencia ética.</div>
+                  </div>
+                </div> <br>
+                <div class="news">
+                    <p>Únete a nuestro informativo y consigue un 5% de descuento en tu primera compra.  <button>Suscribirse</button> </p> 
+                </div>
+                <br>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-info">
+        <div class="footer-column">
+          <h3>Atención al cliente</h3>
+          <ul>
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="#">Seguimiento pedido</a></li>
+            <li><a href="#">Mi cuenta</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>T&C</h3>
+          <ul>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Devoluciones</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Métodos de pago</h3>
+          <img src="https://martinvalverde.com/wp-content/uploads/2020/06/PayPal-Logo.png" alt="PayPal" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/2560px-Mastercard-logo.svg.png" alt="Mastercard" />
+          <img src="https://1000marcas.net/wp-content/uploads/2019/12/VISA-Logo.png" alt="Visa" />
+          <img src="https://img.icons8.com/?size=512&id=nTLVtpxsNPaz&format=png" alt="Mercado Pago" />
+    </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Makeup Doll- Todos los derechos reservados</p>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+      </div>
+    </footer>
+  </body>
+</html>
